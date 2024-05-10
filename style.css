@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* General styles */
+/* GENERAL STYLES */
 a:link {
   color: #fff;
 }
@@ -14,8 +14,7 @@ a:visited {
 }
 
 a:hover {
-  color: #e72151;
-  /* Light pink */
+  color: #e72151; /* Light pink */
 }
 
 a:active {
@@ -26,10 +25,8 @@ body {
   font-family: proximanova, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, "Helvetica Neue", Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f5f2;
-  /* Light beige background */
-  color: #333;
-  /* Dark color */
+  background-color: #f8f5f2; /* Light beige background */
+  color: #333; /* Dark color */
 }
 
 .container {
@@ -37,13 +34,23 @@ body {
   margin: 0 auto;
 }
 
-/* Header styles */
+/* HEADER STYLES */
 header {
-  background-color: #e3c8b4;
-  /* Soft peach color */
+  background-color: #e3c8b4; /* Soft peach color */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1;
+}
+
+.logo {
+  text-decoration: none;
+  color: #333 !important;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+  z-index: 3;
+  position: relative;
+  text-shadow: 2px 2px 0 white;
 }
 
 #nav-links {
@@ -69,13 +76,11 @@ header {
 }
 
 #nav-links li a:hover {
-  color: #af6b51;
-  /* Dark peach color */
+  color: #af6b51; /* Dark peach color */
 }
 
 .menu-toggle {
-  display: none;
-  /* Initially hide on larger screens */
+  display: none; /* Initially hide on larger screens */
 }
 
 .menu-toggle i {
@@ -158,8 +163,7 @@ h1 {
 
 .about {
   padding: 50px 0;
-  height: 400px;
-  /* Fixed height to center vertically */
+  height: 400px; 
 }
 
 .about h2 {
@@ -174,7 +178,7 @@ h1 {
   
 
 
-/* Featured products section */
+/* FEATURE PRODUCTS STYLES*/
 .featured-products {
   padding: 50px 0;
   background-color: #fff;
@@ -200,8 +204,7 @@ h1 {
 
 .flower-slide {
   flex: 0 0 auto;
-  width: 200px;
-  /* Adjust width as needed */
+  width: 200px; /* Adjust the width to fit */
   scroll-snap-align: start;
   padding: 20px;
   background-color: #e3c8b4;
@@ -323,10 +326,9 @@ img {
 
 
 
-/* Footer styles */
+/* FOOTER STYLES */
 .footer {
   background-color: #e3c8b4;
-  /* Soft peach color */
   padding: 30px 0;
   text-align: center;
 }
@@ -439,9 +441,15 @@ img {
   nav #nav-links {
     display: none;
   }
-  /* .logo {
-    padding-bottom: 20px;
-  } */
+  
+  nav.active .logo {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+    text-shadow: 2px 2px 0 white; 
+  }
 }
   
   
@@ -530,5 +538,14 @@ img {
 
   nav #nav-links {
     display: none;
+  }
+
+  nav.active .logo {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+    text-shadow: 2px 2px 0 white; 
   }
 }
