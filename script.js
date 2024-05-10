@@ -35,37 +35,37 @@ document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('contact');
 
   form.addEventListener('submit', function(event) {
-    // Prevent the form from submitting if validation fails
-    if (!validateForm()) {
-      event.preventDefault();
-    }
-  });
+// Prevent the form from submitting if validation fails
+  if (!validateForm()) {
+    event.preventDefault();
+  }
+});
 
-  function validateForm() {
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const comment = document.getElementById('comment').value.trim();
+function validateForm() {
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const comment = document.getElementById('comment').value.trim();
 
-    let isValid = true;
+  let isValid = true;
 
-    // Checking if name is empty
-    if (name === '') {
-      isValid = false;
-      setErrorFor(document.getElementById('name'), 'Name cannot be empty');
-    } else {
-      setSuccessFor(document.getElementById('name'));
-    }
+// Checking if name is empty
+  if (name === '') {
+    isValid = false;
+    setErrorFor(document.getElementById('name'), 'Name cannot be empty');
+  } else {
+    setSuccessFor(document.getElementById('name'));
+  }
 
-    // Check if email is empty and valid email
-    if (email === '') {
-      isValid = false;
-      setErrorFor(document.getElementById('email'), 'Email cannot be empty');
-    } else if (!isEmailValid(email)) {
-      isValid = false;
-      setErrorFor(document.getElementById('email'), 'Please enter a valid email address');
-    } else {
-      setSuccessFor(document.getElementById('email'));
-    }
+  // Check if email is empty and valid email
+  if (email === '') {
+    isValid = false;
+    setErrorFor(document.getElementById('email'), 'Email cannot be empty');
+  } else if (!isEmailValid(email)) {
+    isValid = false;
+    setErrorFor(document.getElementById('email'), 'Please enter a valid email address');
+  } else {
+    setSuccessFor(document.getElementById('email'));
+  }
 
     // Additional validation for comment, if needed
     return isValid;
