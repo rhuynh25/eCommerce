@@ -11,7 +11,7 @@ fetch('flower-data.json')
       flowerDiv.classList.add('flower');
 
 // Logs the div with flower information
-      flowerDiv.innerHTML = `
+  flowerDiv.innerHTML = `
     <div class="slidetxt">
       <h2>${flower.name}</h2>
       <p>Color: ${flower.color}</p>
@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
 function validateForm() {
   const name = document.getElementById('name').value.trim();
   const email = document.getElementById('email').value.trim();
-  const comment = document.getElementById('comment').value.trim();
 
   let isValid = true;
 
