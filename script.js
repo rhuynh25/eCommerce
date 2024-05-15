@@ -16,6 +16,7 @@ fetch('flower-data.json')
       <h2>${flower.name}</h2>
       <p>Color: ${flower.color}</p>
       <p>Price: $${flower.price}</p>
+      <p>${flower.description}</p>
       <img src="${flower.img}" alt="${flower.name}" class="img">
     </div>
   `;

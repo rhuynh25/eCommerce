@@ -5,83 +5,96 @@
       "name": "Rose",
       "color": "Red",
       "price": 15,
-      "img": "/img/rose.jpeg"
+      "img": "/img/rose.jpeg",
+      "description": "Roses are classic symbols of love and romance. With their velvety petals and sweet fragrance, they convey messages of affection and admiration."
     },
     {
       "id": 2,
       "name": "Lily",
       "color": "White",
       "price": 20,
-      "img": "https://i.pinimg.com/474x/12/4a/4e/124a4e4ac76dbbc5623265c67ab9cf24.jpg"
+      "img": "https://i.pinimg.com/474x/12/4a/4e/124a4e4ac76dbbc5623265c67ab9cf24.jpg",
+      "description": "Lilies are elegant and sophisticated flowers known for their beauty and grace. They symbolize purity, renewal, and the essence of femininity."
     },
     {
       "id": 3,
       "name": "Tulip",
       "color": "White, Pink",
       "price": 8,
-      "img": "https://i.pinimg.com/474x/d1/ef/af/d1efaf8b6b3ec7fcc9621636072d6cfa.jpg"
+      "img": "https://i.pinimg.com/474x/d1/ef/af/d1efaf8b6b3ec7fcc9621636072d6cfa.jpg",
+      "description": "Tulips are vibrant and cheerful flowers that herald the arrival of spring. They represent perfect love, elegance, and gracefulness."
     },
     {
       "id": 4,
       "name": "Sunflower",
       "color": "Yellow",
       "price": 10,
-      "img": "https://i.pinimg.com/474x/02/8b/d8/028bd8f167210a0ab08598319ba1420b.jpg"
+      "img": "https://i.pinimg.com/474x/02/8b/d8/028bd8f167210a0ab08598319ba1420b.jpg",
+      "description": "Sunflowers are bold and bright flowers that symbolize happiness, warmth, and positivity. They turn their faces to the sun, radiating joy and optimism."
     },
     {
       "id": 5,
       "name": "Daisy",
       "color": "White, Blue, Red, Yellow, Pink, Orange",
       "price": 8,
-      "img": "https://i.pinimg.com/474x/2d/f1/a8/2df1a83eb3711ee7381fe440eae60721.jpg"
+      "img": "https://i.pinimg.com/474x/2d/f1/a8/2df1a83eb3711ee7381fe440eae60721.jpg",
+      "description": "Daisies are simple yet charming flowers that evoke feelings of innocence, purity, and cheerfulness. They symbolize new beginnings and the beauty of simplicity."
     },
     {
       "id": 6,
       "name": "Lotus",
       "color": "Pink",
       "price": 25,
-      "img": "https://i.pinimg.com/474x/dd/79/88/dd79886cc62792d38e8131fab3f9c8a5.jpg"
+      "img": "https://i.pinimg.com/474x/dd/79/88/dd79886cc62792d38e8131fab3f9c8a5.jpg",
+      "description": "The lotus flower symbolizes purity, enlightenment, and rebirth. It grows in muddy waters, yet remains unstained by its surroundings."
     },
     {
       "id": 7,
       "name": "Orchid",
       "color": "Purple",
       "price": 15,
-      "img": "https://i.pinimg.com/474x/15/27/92/152792a90d3ca1fc33cb80d0d3a23929.jpg"
+      "img": "https://i.pinimg.com/474x/15/27/92/152792a90d3ca1fc33cb80d0d3a23929.jpg",
+      "description": "Orchids are exotic and captivating flowers that represent love, luxury, and beauty. They are admired for their intricate blooms and delicate fragrance."
     },
     {
       "id": 8,
       "name": "Hydrangea",
       "color": "Blue",
       "price": 10,
-      "img": "https://i.pinimg.com/474x/a4/a3/e8/a4a3e8c19319a459e06dff517b486163.jpg"
+      "img": "https://i.pinimg.com/474x/a4/a3/e8/a4a3e8c19319a459e06dff517b486163.jpg",
+      "description": "Hydrangeas are elegant and versatile flowers that symbolize gratitude, sincerity, and heartfelt emotions. They are cherished for their lush blooms and vibrant colors."
     },
-    {"id": 9,
+    {
+      "id": 9,
       "name": "Peony",
       "color": "Pink, Blue",
       "price": 15,
-      "img": "https://i.pinimg.com/474x/a1/f4/7a/a1f47a054aa6dce08695b173b94a674a.jpg"
+      "img": "https://i.pinimg.com/474x/a1/f4/7a/a1f47a054aa6dce08695b173b94a674a.jpg",
+      "description": "Peonies are romantic and luxurious flowers that symbolize prosperity, honor, and compassion. They are prized for their large, fluffy blooms and sweet fragrance."
     },
     {
       "id": 10,
       "name": "Chrysanthemum",
       "color": "Orange",
       "price": 10,
-      "img": "https://i.pinimg.com/474x/43/4a/7b/434a7b0f48ed93ab4e9f137420904ac9.jpg"
+      "img": "https://i.pinimg.com/474x/43/4a/7b/434a7b0f48ed93ab4e9f137420904ac9.jpg",
+      "description": "Chrysanthemums are resilient and cheerful flowers that symbolize optimism, joy, and longevity. They are often associated with happiness and good fortune."
     },
     {
       "id": 11,
       "name": "Crocus",
       "color": "Purple",
       "price": 10,
-      "img": "https://i.pinimg.com/474x/d4/35/52/d4355217b2f939526b699bd0c2d6c194.jpg"
+      "img": "https://i.pinimg.com/474x/d4/35/52/d4355217b2f939526b699bd0c2d6c194.jpg",
+      "description": "Crocuses are delicate and charming flowers that herald the arrival of spring. They symbolize youthful joy, happiness, and new beginnings."
     },
     {
       "id": 12,
       "name": "Iris",
       "color": "Blue",
       "price": 15,
-      "img": "https://i.pinimg.com/474x/88/7b/27/887b27be8d1247b1d526b5d4c901fd7d.jpg"
+      "img": "https://i.pinimg.com/474x/88/7b/27/887b27be8d1247b1d526b5d4c901fd7d.jpg",
+      "description": "Irises are elegant and majestic flowers known for their striking beauty and unique shape. They symbolize wisdom, courage, and admiration."
     }
   ]
 }
