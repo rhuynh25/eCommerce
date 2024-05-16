@@ -1,6 +1,6 @@
 // Fetching the JSON data
 fetch("flower-data.json")
-  .then((response) => response.json()) // Parse JSON converts to data
+  .then((response) => response.json()) // Parse JSON
   .then((data) => {
     const flowerContainer = document.getElementById("flower-container");
 
@@ -35,54 +35,25 @@ fetch("flower-data.json")
 
 
 
-// JavaScript for form validation
-window.addEventListener("load", function () {
-  const form = document.getElementById("contact-form");
-
-  form.addEventListener("submit", function (event) {
-    // Prevent the form from submitting if validation fails
-    if (!validateForm()) {
-      event.preventDefault(); // Prevent default form submission behavior
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var message = document.getElementById('comment').value; 
+    var formMessages = document.getElementById('formMessage');
+    formMessages.textContent = '';
+    if (!name || !email || !message) {
+        formMessages.textContent = 'Fill out all respected fields';
+        return;
     }
-  });
-
-  // Function to validate form inputs
-  function validateForm() {
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    let isValid = true;
-
-    // Checking if name is empty
-    if (name === "") {
-      isValid = false;
-      setErrorFor(document.getElementById("name"), "Enter valid name");
+    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(email)) {
+        formMessages.textContent = 'Please enter a valid email address.';
+        return;
     }
+      formMessages.textContent = 'You have submitted your contact form!';
+    });
 
-    // Check if email is empty and valid email format
-    if (email === "") {
-      isValid = false;
-      setErrorFor(document.getElementById("email"), "Enter valid email");
-    } else if (!isEmailValid(email)) {
-      isValid = false;
-      setErrorFor(
-        document.getElementById("email"),
-        "Enter a valid email address"
-      ); 
-    }
-
-    return isValid; // Return whether form is valid or not
-  }
-
-  // Function to set error message for form inputs
-  function setErrorFor(input, message) {
-    alert(message); 
-  }
-
-  // Validating email format using regex
-  function isEmailValid(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
-  }
-});
 
 // Hamburger Menu
 function clickMenu() {
